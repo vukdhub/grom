@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.parent .child {
+  width: 80%;
+  padding: 1.5em;
+  margin: 0.75em;
+  background-color: rgb(173, 216, 230);
+}
+.parent .child:first-child {
+  margin-top: 0;
+}
+.parent .child:last-child {
+  margin-bottom: 0;
+}
