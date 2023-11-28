@@ -349,15 +349,86 @@ body {
   color: #444;
 }
 
-p, td, th, li, dd {
+p,
+td,
+th,
+li,
+dd {
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0.6em;
   font-weight: bold;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+}
+
+.landingpage {
+  display: grid;
+  gap: 1em 1em;
+  width: 600px;
+  height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 12%);
+}
+
+.box {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.python {
+  grid-column: span 3;
+}
+
+.html,
+.javascript,
+.sqlite {
+  grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+  .landingpage {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    height: 600px;
+  }
+  .landingpage h1 {
+    grid-column: span 3;
+  }
+}
+.twoflex {
+  display: flex;
+  gap: 2em;
+}
+
+.blogbar {
+  margin-top: 20px;
+}
+
+.post ul {
+  margin: 3px;
 }
 
 /*!
@@ -12312,7 +12383,12 @@ readers do not read off random characters that represent icons */
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -12332,7 +12408,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1em 1em;
-  background-color: #F9FBE7;
+  background-color: #f9fbe7;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
@@ -12342,7 +12418,8 @@ body {
   box-sizing: border-box;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1.5em;
 }
 
@@ -12350,7 +12427,8 @@ ol, ul {
   display: none !important;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -12359,16 +12437,19 @@ body {
   flex-direction: column;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
-.header, .site-header {
+.header,
+.site-header {
   display: flex;
   justify-content: space-between;
 }
 
-.title, .logo {
+.title,
+.logo {
   padding: 1em 2em 3em 0;
 }
 
