@@ -12385,6 +12385,7 @@ readers do not read off random characters that represent icons */
 
 * {
   font-family: "Roboto", sans-serif;
+  color: #dddddd;
 }
 
 h1,
@@ -12397,14 +12398,13 @@ h6 {
 }
 
 body {
-  background-color: #F0EDD4;
+  background-color: #1a1a1a;
 }
 
 * {
   box-sizing: border-box;
   border: 0 none;
   padding: 0;
-  color: #000;
 }
 
 .pageinside {
@@ -12412,13 +12412,13 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1em 1em;
-  background-color: #f9fbe7;
+  background-color: #282828;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
 
 * {
-  color: #525029;
+  color: #dddddd;
   box-sizing: border-box;
 }
 
@@ -12446,11 +12446,15 @@ body {
 }
 
 .nav {
-  background-color: #ECCDB4;
+  background-color: #333333;
+}
+
+.nav a {
+  color: #dddddd;
 }
 
 .header {
-  background-color: #ECCDB4;
+  background-color: #333333;
 }
 
 .header,
@@ -12483,7 +12487,7 @@ body {
   }
 }
 .title * {
-  color: #111;
+  color: #dddddd;
 }
 
 .title p {
@@ -12491,16 +12495,28 @@ body {
 }
 
 .footer {
-  background-color: #ECCDB4;
+  background-color: #333333;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #222;
+  border-top: 1px solid #dddddd;
 }
 
 .footer a {
-  color: #222;
+  color: #dddddd;
 }
 
 .footer .social {
   font-size: 2rem;
+}
+
+code {
+  background: black;
+}
+
+pre {
+  background: black;
+}
+
+.box {
+  background-color: #333333;
 }

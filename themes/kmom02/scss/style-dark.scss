@@ -20,6 +20,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 * {
     font-family: 'Roboto', sans-serif;
+    color: $dark-font-color;
 }
 
 h1,
@@ -32,14 +33,13 @@ h6 {
 }
 
 body {
-    background-color: $background-color;
+    background-color: $dark-background-color;
 }
 
 * {
     box-sizing: border-box;
     border: 0 none;
     padding: 0;
-    color: $font-color;
 }
 
 // Second body
@@ -48,13 +48,13 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1em 1em;
-    background-color: #f9fbe7;
+    background-color: $pageinside-dark;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
 
 * {
-    color: #525029;
+    color: $dark-font-color;
     box-sizing: border-box;
 }
 
@@ -83,10 +83,14 @@ body {
     display: grid
 }
 .nav {
-    background-color: #ECCDB4;
+    background-color: $navhedfot-dark;
+}
+
+.nav a {
+    color: $dark-font-color;
 }
 .header {
-    background-color: #ECCDB4;
+    background-color: $navhedfot-dark;
 }
 
 .header,
@@ -125,7 +129,7 @@ body {
 }
 
 .title * {
-    color: #111;
+    color: $dark-font-color;
 }
 
 .title p {
@@ -136,18 +140,28 @@ body {
 
 // Footer
 .footer {
-    background-color: #ECCDB4;
+    background-color: $navhedfot-dark;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #222;
+    border-top: 1px solid $dark-font-color;
 }
 
 .footer a {
-    color: #222;
+    color: $dark-font-color;
 }
 
 .footer .social {
     font-size: 2rem;
 }
 
+code {
+    background: black;
+}
 
+pre {
+    background: black;
+}
+
+.box {
+    background-color: $navhedfot-dark;
+}

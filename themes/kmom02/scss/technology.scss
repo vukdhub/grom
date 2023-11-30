@@ -37,6 +37,10 @@
     grid-column: span 2;
 }
 
+.colors {
+    background-color: #FEA1A1;
+}
+
 @media (max-width: 767px) {
     .landingpage {
         grid-template-columns: repeat(3, 1fr);
