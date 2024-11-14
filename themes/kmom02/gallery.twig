@@ -1,0 +1,49 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main-gallery" role="main">
+
+            {{ content }}
+
+
+        <div class="gallery-grid">
+            {% set images = [
+                'IMG_434.jpeg',
+                'IMG_4720.jpeg',
+                'IMG_4732.jpeg',
+                'IMG_4862.jpeg',
+                'IMG_4880.jpeg',
+                'IMG_4921.jpeg',
+                'IMG_4927.jpeg',
+                'IMG_4933.jpeg',
+                'IMG_4956.jpeg',
+                'IMG_5033.jpeg',
+                'IMG_5080.jpeg',
+                'IMG_5113.jpeg'
+            ] %}
+
+            {% for image in images %}
+                <div class="gallery-item">
+                    <a href="{{ base_url }}/image/gallery/{{ image }}" target="_blank">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{ base_url }}/image/gallery/{{ image }}&w=800&h=600&q=80&aro&crop-to-fit&area=15,15,15,15" />
+                            <source media="(max-width: 767px)" srcset="{{ base_url }}/image/gallery/{{ image }}&w=400&q=60&aro&crop-to-fit&area=15,15,15,15" />
+                            <img src="{{ base_url }}/image/gallery/{{ image }}&w=400&q=60" alt="{{ image|replace({'.jpg': ''}) }}" loading="lazy"/>
+                        </picture>
+                    </a>
+                </div>
+            {% endfor %}
+
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/8nGzjVgLiNA" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

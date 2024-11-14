@@ -435,6 +435,78 @@ h6 {
   margin: 3px;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.gallery-item {
+  height: 245px; /* Set a fixed height for all items */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  border-radius: 6px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height to fit the parent */
+  object-fit: cover; /* Crop images to fill the space without stretching */
+  display: block; /* Ensures no gap below the image */
+}
+
+/* Hover effect */
+.gallery-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.gallery-item img:hover {
+  filter: brightness(0.9); /* Darkens the image slightly on hover */
+}
+
+.embed-container {
+  grid-column: span 3; /* Occupies all 3 columns */
+  grid-row: span 3;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sheet iframe {
+  width: 600px;
+  height: 220px;
+  border: none;
+  overflow: hidden;
+}
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
