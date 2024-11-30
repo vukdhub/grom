@@ -30,7 +30,7 @@ Results
 
 ###Norwegian
 
-<img src="%assets_url%/img/norw.png" width="300" height="300" />
+<img src="%assets_url%/img/norw.png" alt="Norwegian webiste" width="300" height="300" />
 
 Color palette:
 <table style="border-spacing: 4px; border-collapse: separate">
@@ -47,7 +47,7 @@ The deep blue (#003251) resonates with a sense of reliability and calmness. Cris
 
 ###National Geographic
 
-<img src="%base_url%/assets/img/nat.png" style="height: 300px; width:300px;"/>
+<img src="%base_url%/assets/img/nat.png" alt="Nat webiste" style="height: 300px; width:300px;"/>
 
 Color palette:
 <table style="border-spacing: 4px; border-collapse: separate">
@@ -64,7 +64,7 @@ The deep black (#000000) serves as a canvas, symbolizing mystery, depth, and the
 
 ###Pescanik
 
-<img src="%base_url%/assets/img/pes.png" style="height: 300px; width:300px;"/>
+<img src="%base_url%/assets/img/pes.png" alt="Pescanik webiste" style="height: 300px; width:300px;"/>
 
 Color palette:
 <table style="border-spacing: 4px; border-collapse: separate">

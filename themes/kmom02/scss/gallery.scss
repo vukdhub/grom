@@ -19,34 +19,33 @@
 }
 
 .gallery-item {
-    height: 245px; /* Set a fixed height for all items */
-    overflow: hidden; /* Hide any overflow */
-    border-radius: 6px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+    height: 245px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery-item img {
     border-radius: 6px;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height to fit the parent */
-    object-fit: cover; /* Crop images to fill the space without stretching */
-    display: block; /* Ensures no gap below the image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-/* Hover effect */
 .gallery-item:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item img:hover {
-    filter: brightness(0.9); /* Darkens the image slightly on hover */
+    filter: brightness(0.9);
 }
 
 
 .embed-container {
-    grid-column: span 3; /* Occupies all 3 columns */
+    grid-column: span 3;
     grid-row: span 3; 
     position: relative;
     padding-bottom: 56.25%;
@@ -71,4 +70,16 @@
     height: 220px;
     border: none;
     overflow: hidden;
+}
+
+.sheet iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .embed-container {
+        grid-column: span 1;
+    }
 }

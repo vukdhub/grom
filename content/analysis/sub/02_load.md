@@ -27,27 +27,27 @@ Resultat
 
 Pescanik
 
-<img src="%assets_url%/img/pescanik.png" width="300" height="300" />
+<img src="%assets_url%/img/pescanik.png" alt="Pescanik" width="300" height="300" />
 I measured three different pages—Home, English, and Knjiga. The loading time varied based on the elements on each page, and while the overall score is well-optimized for desktop, it’s somewhat lower for mobile.
 <div class="sheet">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzLcGGceYPkapSyYuI38LZxPCYpMpYdSL7GfW24TgoujU3b56e5AktAOwEl1pKYXkLCKb3ZryRU_Lo/pubhtml?gid=2042024564&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzLcGGceYPkapSyYuI38LZxPCYpMpYdSL7GfW24TgoujU3b56e5AktAOwEl1pKYXkLCKb3ZryRU_Lo/pubhtml?gid=2042024564&amp;single=true&amp;widget=true&amp;headers=false" title="Pescanik stats"></iframe>
 </div>
 
 Sverige Radio
 
-<img src="%assets_url%/img/sverigeradio.png" width="300" height="300" />
+<img src="%assets_url%/img/sverigeradio.png" alt="SR" width="300" height="300" />
 Sveriges Radio has a fast-loading website with smaller-sized elements, making all three pages quick to load and lightweight. The Google PageSpeed score is high for desktop and falls within the mid-range for mobile.
 <div class="sheet">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzLcGGceYPkapSyYuI38LZxPCYpMpYdSL7GfW24TgoujU3b56e5AktAOwEl1pKYXkLCKb3ZryRU_Lo/pubhtml?gid=1214139737&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzLcGGceYPkapSyYuI38LZxPCYpMpYdSL7GfW24TgoujU3b56e5AktAOwEl1pKYXkLCKb3ZryRU_Lo/pubhtml?gid=1214139737&amp;single=true&amp;widget=true&amp;headers=false" title="Sverigeradio stats"></iframe>
 </div>
 
 N1
 
-<img src="%assets_url%/img/n1.png" width="300" height="300" />
+<img src="%assets_url%/img/n1.png" alt="N1" width="300" height="300" />
 As a daily news site with high traffic, N1 is slow and poorly optimized for mobile devices. It’s cluttered with banners and information-heavy images, resulting in slow loading times and a high number of elements.
 
 <div class="sheet">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzLcGGceYPkapSyYuI38LZxPCYpMpYdSL7GfW24TgoujU3b56e5AktAOwEl1pKYXkLCKb3ZryRU_Lo/pubhtml?gid=1376371584&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzLcGGceYPkapSyYuI38LZxPCYpMpYdSL7GfW24TgoujU3b56e5AktAOwEl1pKYXkLCKb3ZryRU_Lo/pubhtml?gid=1376371584&amp;single=true&amp;widget=true&amp;headers=false" title="N1 stats"></iframe>
 </div>
 
 ###Summary of Results
@@ -62,7 +62,7 @@ The most common areas for improvement across these sites include:
 2. Reducing Resource Size: Sites like N1, with heavy images and banner content, could benefit from image compression and conditional loading (lazy loading) to reduce initial load times.
 3. Minimizing Requests: Reducing the number of elements loaded per page, especially by combining CSS and JavaScript files, could help all three sites improve load times.
 
-####Ranking and Test Winner
+###Ranking and Test Winner
 Based on the measurements, the ranking of sites is as follows:
 
 1. Sveriges Radio: The clear winner with consistently low loading times, minimal element sizes, and high scores, especially on desktop.
