@@ -7,6 +7,7 @@
 @import 'typography';
 @import 'technology';
 @import 'blog-index';
+@import 'gallery.scss';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -80,8 +81,9 @@ body {
 }
 
 .hednav {
-    display: grid
+    display: grid;
 }
+
 .nav {
     background-color: $navhedfot-dark;
 }
@@ -89,24 +91,26 @@ body {
 .nav a {
     color: $dark-font-color;
 }
+
 .header {
     background-color: $navhedfot-dark;
 }
 
-.header,
-.footer {
+.header, .footer {
     flex: 0 0 auto;
 }
 
 // Header
-.header, 
-.site-header {
+.header, .site-header {
     display: flex;
 }
 
+.box.colors a {
+    color: #fff;
+}
+
 // Title
-.title, 
-.logo {
+.title, .logo {
     padding: 1em 1em 1em 0;
 }
 
@@ -155,11 +159,11 @@ body {
 }
 
 code {
-    background: black;
+    background: #000;
 }
 
 pre {
-    background: black;
+    background: #000;
 }
 
 .box {

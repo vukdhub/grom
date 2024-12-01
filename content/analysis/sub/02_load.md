@@ -12,9 +12,9 @@ Selection
 -----------------------
 
 I selected websites that I frequently use and that have a high volume of daily visitors on both mobile and desktop screens. These websites are: 
-1. Pescanik <a href="https://www.pescanik.net">https://www.pescanik.net</a>
-2. Sveriges Radio <a href="https://sverigesradio.se">https://sverigesradio.se</a>
-3. N1 Info <a href="https://n1info.rs">https://n1info.rs</a>
+1. <a href="https://www.pescanik.net">Pescanik</a>
+2. <a href="https://sverigesradio.se">Sveriges Radio</a>
+3. <a href="https://n1info.rs">N1 Info</a>
 
 
 Method

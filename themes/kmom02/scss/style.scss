@@ -82,29 +82,28 @@ body {
 }
 
 .hednav {
-    display: grid
-}
-.nav {
-    background-color: #ECCDB4;
-}
-.header {
-    background-color: #ECCDB4;
+    display: grid;
 }
 
-.header,
-.footer {
+.nav {
+    background-color: #eccdb4;
+}
+
+.header {
+    background-color: #eccdb4;
+}
+
+.header, .footer {
     flex: 0 0 auto;
 }
 
 // Header
-.header, 
-.site-header {
+.header, .site-header {
     display: flex;
 }
 
 // Title
-.title, 
-.logo {
+.title, .logo {
     padding: 1em 1em 1em 0;
 }
 
@@ -138,7 +137,7 @@ body {
 
 // Footer
 .footer {
-    background-color: #ECCDB4;
+    background-color: #eccdb4;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;

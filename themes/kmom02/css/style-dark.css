@@ -388,9 +388,9 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid #000;
   font-size: 18px;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px #000;
 }
 
 .landingpage h1 {
@@ -409,11 +409,11 @@ h6 {
 }
 
 .colors {
-  background-color: #FEA1A1;
+  background-color: #fea1a1;
 }
 
 .box.colors a {
-  color: #003366;
+  color: #036;
 }
 
 @media (max-width: 767px) {
@@ -439,6 +439,88 @@ h6 {
   margin: 3px;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.gallery-item {
+  height: 245px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img:hover {
+  filter: brightness(0.9);
+}
+
+.embed-container {
+  grid-column: span 3;
+  grid-row: span 3;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sheet iframe {
+  width: 600px;
+  height: 220px;
+  border: 0;
+  overflow: hidden;
+}
+
+.sheet iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .embed-container {
+    grid-column: span 1;
+  }
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -12389,7 +12471,7 @@ readers do not read off random characters that represent icons */
 
 * {
   font-family: "Roboto", sans-serif;
-  color: #dddddd;
+  color: #ddd;
 }
 
 h1,
@@ -12422,7 +12504,7 @@ body {
 }
 
 * {
-  color: #dddddd;
+  color: #ddd;
   box-sizing: border-box;
 }
 
@@ -12450,29 +12532,30 @@ body {
 }
 
 .nav {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .nav a {
-  color: #dddddd;
+  color: #ddd;
 }
 
 .header {
-  background-color: #333333;
+  background-color: #333;
 }
 
-.header,
-.footer {
+.header, .footer {
   flex: 0 0 auto;
 }
 
-.header,
-.site-header {
+.header, .site-header {
   display: flex;
 }
 
-.title,
-.logo {
+.box.colors a {
+  color: #fff;
+}
+
+.title, .logo {
   padding: 1em 1em 1em 0;
 }
 
@@ -12491,7 +12574,7 @@ body {
   }
 }
 .title * {
-  color: #dddddd;
+  color: #ddd;
 }
 
 .title p {
@@ -12499,14 +12582,14 @@ body {
 }
 
 .footer {
-  background-color: #333333;
+  background-color: #333;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 
 .footer a {
-  color: #dddddd;
+  color: #ddd;
 }
 
 .footer .social {
@@ -12514,13 +12597,13 @@ body {
 }
 
 code {
-  background: black;
+  background: #000;
 }
 
 pre {
-  background: black;
+  background: #000;
 }
 
 .box {
-  background-color: #333333;
+  background-color: #333;
 }

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
 }
+
 .landingpage {
     display: grid;
     gap: 1em 1em;
@@ -16,10 +17,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid #000;
     font-size: 18px;
     // background-color: #ECCDB4;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px #000;
 }
 
 .landingpage h1 {
@@ -38,11 +39,11 @@
 }
 
 .colors {
-    background-color: #FEA1A1;
+    background-color: #fea1a1;
 }
 
 .box.colors a {
-    color: #003366;
+    color: #036;
 }
 
 @media (max-width: 767px) {

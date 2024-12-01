@@ -6,7 +6,7 @@ Description: Page about web technology
 About tools:
 ==========================
 
-###This site was created with the help of the following tools:
+##This site was created with the help of the following tools:
 
 - Pico CMS (Content Management System) based on PHP.
 https://picocms.org. Pico is a "flat-file" CMS, meaning that it does not require a traditional database. Instead it stores content in flat files, making it easy to set up and deploy.
