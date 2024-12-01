@@ -95,8 +95,12 @@ To make navigation easier, I used simple lines to separate sections like the hea
 
 Overall, the design is minimalistic, with a focus on simplicity and clarity. While it works for now, I see room for improvement, especially in creating stronger visual contrast and enhancing typography for a more polished look.
 
-Referenser
------------------------
+###_"Design Elements & Principles" for my website:_
+
+Throughout the previous stages of the course, I have already implemented several design principles such as line, color, repetition, and typography. For this project, I have made some adjustments to further improve the balance and hierarchy.
+
+###Referenser
+
 
 https://www.canva.com/learn/design-elements-principles/
 

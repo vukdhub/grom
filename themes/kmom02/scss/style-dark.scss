@@ -45,6 +45,9 @@ body {
 
 // Second body
 .pageinside {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -52,6 +55,12 @@ body {
     background-color: $pageinside-dark;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+}
+
+.main {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 2em;
 }
 
 * {
@@ -72,12 +81,6 @@ ul {
 html,
 body {
     height: 100%;
-}
-
-// Placement
-body {
-    display: flex;
-    flex-direction: column;
 }
 
 .hednav {
@@ -139,8 +142,6 @@ body {
 .title p {
     font-style: italic;
 }
-
-
 
 // Footer
 .footer {

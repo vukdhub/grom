@@ -439,6 +439,10 @@ h6 {
   margin: 3px;
 }
 
+.main-gallery {
+  margin-top: 50px;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -12494,6 +12498,9 @@ body {
 }
 
 .pageinside {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -12501,6 +12508,12 @@ body {
   background-color: #282828;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+}
+
+.main {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  padding: 2em;
 }
 
 * {
@@ -12520,11 +12533,6 @@ ul {
 html,
 body {
   height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 .hednav {
